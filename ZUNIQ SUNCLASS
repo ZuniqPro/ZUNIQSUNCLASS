@@ -1,0 +1,30 @@
+eyewear-pro/
+├── prisma/
+│   ├── schema.prisma          # Complete PostgreSQL schema (Models 1 to 29)
+│   └── seed.ts                # Initial admin, roles, permissions, and shop settings
+├── src/
+│   ├── actions/               # Server Actions for secure backend operations
+│   ├── app/                   # Next.js App Router (Layouts, Pages, API routes)
+│   │   ├── (auth)/            # Login, password reset
+│   │   ├── (dashboard)/       # Main authenticated layout (Sidebar, Header, Views)
+│   │   │   ├── dashboard/
+│   │   │   ├── pos/
+│   │   │   ├── products/
+│   │   │   ├── inventory/
+│   │   │   ├── customers/
+│   │   │   ├── sales/
+│   │   │   ├── purchases/
+│   │   │   ├── suppliers/
+│   │   │   ├── expenses/
+│   │   │   ├── staff/
+│   │   │   ├── reports/
+│   │   │   └── settings/
+│   │   └── layout.tsx
+│   ├── components/            # Reusable UI components (shadcn/ui inspired)
+│   │   ├── ui/                # Buttons, Inputs, Dialogs, Tables, Cards
+│   │   └── layout/            # Sidebar, Header, Nav items
+│   ├── lib/                   # Database client (Prisma), Auth config, utils
+│   └── types/                 # TypeScript interfaces and Zod validation schemas
+├── package.json
+├── tsconfig.json
+└── tailwind.config.ts
